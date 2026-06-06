@@ -214,6 +214,28 @@ body{
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+.map-button{
+  display: inline-block;
+
+  margin-top: 15px;
+  padding: 12px 22px;
+
+  background: #f08cab;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.map-button:hover{
+  background: #e27798;
+}
+
 /* KANAN BOX */
 .about-image-box {
   flex: 1;
