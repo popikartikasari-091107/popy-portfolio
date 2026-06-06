@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popy Beauty Portfolio</title>
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <!-- SIDEBAR HEADER -->
+      <div class="sidebar-header">
+        <div class="logo-text">Popy Beauty</div>
+      </div>
+
+      <!-- SIDEBAR MENU -->
+      <div class="sidebar-menu">
+        <a href="#home" onclick="toggleSidebar()">Home</a>
+        <a href="#skills" onclick="toggleSidebar()">Skills</a>
+        <a href="#about" onclick="toggleSidebar()">About</a>
+        <a href="#contact" onclick="toggleSidebar()">Contact</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>
+          BEAUTY HAIR
+          <span>TREATMENT</span>
+        </h1>
+
+        <h3>Perkenalkan saya Popy</h3>
+
+        <p class="description">
+          Saya memiliki kemampuan di bidang hair treatment dan beauty styling
+          untuk menciptakan tampilan yang rapi, menarik, dan meningkatkan rasa
+          percaya diri pelanggan.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Popy Kartika Sari" />
+
+        <h3>Popy Kartika Sari</h3>
+        <p>Hairdresser</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Hair Wash</h3>
+          <p>
+            Teknik dasar mencuci rambut dengan kebersihan dan kenyamanan
+            pelanggan.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Hair Wash',
+                'Bermanfaat untuk mencegah Masalah Kulit Kepala, Relaksasi, dan Mempermudah Penataan.',
+                'images/hairwash.jpg',
+              )
+            "
+          >
+            Lihat detail
+          </button>
+        </div>
+
+        <div class="skill-card">
+          <h3>Creambath</h3>
+          <p>
+            Teknik relaksasi dan perawatan rambut menggunakan creambath
+            treatment.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Creambath',
+                'Bermanfaat untuk melembapkan, menutrisi batang rambut, memperkuat akar, serta memberikan efek relaksasi melalui pijatan.',
+                'images/creambath.jpg',
+              )
+            "
+          >
+            Lihat Detail
+          </button>
+        </div>
+
+        <div class="skill-card">
+          <h3>Hair Mask</h3>
+          <p>
+            Perawatan nutrisi rambut untuk menjaga kesehatan dan kelembutan
+            rambut.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Hair Mask',
+                'Bermanfaat untuk menutrisi, menghidrasi, dan memperbaiki kerusakan pada batang rambut secara mendalam.',
+                'images/hairmask.jpg',
+              )
+            "
+          >
+            Lihat Detail
+          </button>
+        </div>
+
+        <div class="skill-card">
+          <h3>Blow Dry</h3>
+          <p>
+            Teknik styling rambut menggunakan hair dryer dan sisir blow untuk
+            volume dan bentuk rambut.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Blow Dry',
+                'Bermanfaat untuk mengubah bentuk tekstur rambut, merapikan tampilan secara instan, serta mendongkrak rasa percaya diri lewat tatanan rambut.',
+                'images/blowdry.jpg',
+              )
+            "
+          >
+            Lihat Detail
+          </button>
+        </div>
+
+        <div class="skill-card">
+          <h3>Catok</h3>
+          <p>
+            Teknik styling menggunakan catokan untuk hasil rambut rapi dan
+            elegan.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Catok',
+                'Bermanfaat untuk menghasilkan rambut lurus, rapi, dan elegan dengan tampilan yang modern.',
+                'images/catok.jpg',
+              )
+            "
+          >
+            Lihat Detail
+          </button>
+        </div>
+
+        <div class="skill-card">
+          <h3>Curly Styling</h3>
+          <p>
+            Teknik membuat styling curly dengan hasil yang natural dan modern.
+          </p>
+          <button
+            class="skill-btn"
+            onclick="
+              openImage(
+                'Curly Styling',
+                'Bermanfaat untuk membentuk tekstur gelombang yang indah, menambah volume secara instan, serta memberikan kesan penampilan yang lebih anggun, feminin, dan dinamis.',
+                'images/curly.jpg',
+              )
+            "
+          >
+            Lihat Detail
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="section-title">Profil Pelatihan</h2>
+
+      <div class="about-wrapper">
+        <!-- LEFT -->
+        <div class="about-image-box">
+          <img src="images/lkp.jpg" alt="LKP IRA Cimahi" />
+
+          <div class="about-desc">
+            <p>
+              Saya merupakan peserta pelatihan di LKP IRA Cimahi tahun 2026.
+              Dari sini saya mempunyai skill hair wash, creambath, hair mask,
+              blow dry, catok, hingga styling modern lainnya.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-text">
+          <h3>LKP IRA / LPK IRA CIMAHI</h3>
+
+          <p>
+            Tempat pelatihan resmi hair treatment dan beauty styling yang
+            memberikan pembelajaran dari dasar hingga profesional.
+          </p>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1166169443827!2d107.5432859749961!3d-6.876629093122183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5032a752e1b%3A0xa1a21526b52a7688!2sLKP%2FLPK%20IRA%20CIMAHI!5e0!3m2!1sid!2sid!4v1780667067783!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <p>
+        Terima kasih telah mengunjungi portofolio saya. Silakan hubungi saya
+        melalui sosial media berikut.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://instagram.com/thyv.poppy" target="_blank">
+          Instagram
+        </a>
+
+        <a href="https://wa.me/6283875897449" target="_blank"> WhatsApp </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2026 Popy Beauty Portfolio</footer>
+
+    <!-- FLOATING IMAGE -->
+    <div class="image-popup" id="imagePopup">
+      <span class="close-popup" onclick="closeImage()"> ✕ </span>
+
+      <h3 id="popupTitle"></h3>
+
+      <p id="popupDesc"></p>
+
+      <div class="popup-label">Contoh:</div>
+
+      <img id="popupImage" src="" alt="Skill Image" />
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      function openImage(title, desc, imageSrc) {
+        document.getElementById("popupTitle").innerText = title;
+
+        document.getElementById("popupDesc").innerText = desc;
+
+        document.getElementById("popupImage").src = imageSrc;
+
+        document.getElementById("imagePopup").classList.add("active");
+      }
+
+      function closeImage() {
+        document.getElementById("imagePopup").classList.remove("active");
+      }
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".sidebar a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
